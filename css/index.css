@@ -1,0 +1,344 @@
+@charset "utf-8";
+@import 'animate.css';
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* font-family: 'Abril Fatface', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+/* font-family: 'Roboto Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+html {
+    overflow: hidden;
+    background: #bce6ff;
+}
+body {font-family: 'Noto Sans KR', sans-serif;}
+
+.firstscreen {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgb(0, 0, 60); color: #fff;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    z-index: 99999;
+    font-family: 'Abril Fatface', cursive;
+    display: none;
+
+}
+.firstscreen > p {
+    display: inline;
+    font-size: 300px;
+    letter-spacing: -5px;
+    
+}
+.firstscreen p:nth-child(1) {
+    transform: translate(300px,0px);
+}
+.firstscreen p:nth-child(2) {
+    transform: translate(600px,-200px);
+    /* transform: translate(190px,-150px); */
+}
+.firstscreen p:nth-child(3) {
+    font-size: 100px;
+    transform: translate(0px,0px);
+    letter-spacing: -2px;
+}
+.header {
+    position: fixed; top: 50px; left: 0;
+    z-index: 5; width: 100%; display: none;
+}
+.headerwrap {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header .menu {
+    position: absolute; top: 0; right: 0;
+    font-family: 'Abril Fatface', cursive;
+    display: flex; width: 100%;
+}
+
+.header .menu li:nth-child(1) {
+    width: 100%;
+}
+.header .menu li a {
+    display: block;
+    background-color: #015c92;
+    opacity: 0.2;
+    width: 100%;
+    height: 5px;
+    transition: all .3s;
+    padding:0 20px ;
+}
+
+.header .menu li a p {
+    padding-top: 10px;
+    font-size: 20px;
+}
+.header .menu li.on a {
+    background-color: #015c92;
+    height: 10px;
+    opacity: 1;
+}
+.header .menu li.on p {
+    color:#015c92;
+    font-size: 25px;
+}
+
+.wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.5);
+}
+/* -----------section1----------- */
+
+.sec1 {
+    background: #fff;
+    border-radius: 50px 50px 0px 0px;
+    letter-spacing: -2px;
+    position: relative;
+}
+.sec1 .sec1top {
+    display: block;
+    background: #015c92;
+    height: 100px;
+    width: 100%;
+    border-radius: 50px 50px 0px 0px;
+    position: relative;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.5);
+}
+.sec1 .sec1top i {
+    position: absolute;
+    top: 25%;
+    left: 65px;
+    font-size: 50px;
+    color: #fff;
+    animation: imove 1.5s 5 linear;
+    cursor: pointer;
+}
+@keyframes imove {
+    0% {
+    left: 50px;
+    transform: scale(1);
+    opacity: 1;
+    }
+    100% {
+    left: 30%;
+    transform: scale(1.5);
+    opacity: 0.1;
+
+    }
+}
+.sec1 .textbox {
+    padding: 50px; font-family: 'Roboto Mono', monospace; 
+}
+.sec1 .textbox p:nth-child(1) {
+    display: inline-block;
+    font-size: 50px; background: #000; color: #fff;
+    margin-top: 50px; padding: 0 20px; margin-left: 16px;
+}
+.sec1 .textbox p:nth-child(2) {
+    letter-spacing: -10px; font-size: 200px;
+}
+.sec1 .textbox p:nth-child(3) {
+    line-height: 100px;
+    letter-spacing: -10px; font-size: 200px;
+}
+.sec1 .barcode {
+    position: absolute; bottom: 0; left: 0;
+    width: 100%; height: 200px;
+}
+.sec1 .barcode > .sec1img {
+    display: inline-block; width: 100%;
+    background: url(../img/barcode.png); height: 200px;
+    background-repeat: no-repeat; background-position: center;}
+
+/* .sec1 .barcode {
+    height: 38%; width: 100%;
+    position: relative;
+}
+.sec1 .barcode > .sec1img {
+    position: absolute; bottom: 0; 
+    display: inline-block; width: 100%;
+    background: url(../img/barcode.png); height: 200px;
+    background-repeat: no-repeat; background-position: center;
+} */
+
+/* -----------section2----------- */
+
+.sec2 {
+    background: #fff; display: flex; align-items: center; 
+    justify-content: space-between;
+}
+.sec2 > .sec2left { 
+    width: 40%; height: 70%; background: #53a7d8; 
+    border-radius: 0 30px 30px 0; padding: 50px 0;
+    display: flex; flex-wrap: wrap; align-items: center;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.3);
+    position: relative;
+}
+.sec2 .sec2tit {
+    display: inline-block; font-size: 24px; color: #fff;
+    background: #015c92; padding: 5px 20px ; position: absolute;
+    top: -20px; left: 0; font-family: 'Roboto Mono', monospace;
+
+}
+.sec2 h1 img {
+    width: 200px; margin-bottom: 30px; border-radius: 0 20px 20px 0;
+}
+.sec2 .info {
+    
+}
+.sec2 .info > li p {
+    display: inline-block; background: #fff; color:#53a7d8;
+    font-size: 20px; padding: 2px 10px; width: 120px; 
+    margin: 0 5px 20px 0; font-weight: 900;
+    border-radius: 0 0 5px 0;
+}
+.sec2 .info > li span {
+    display: inline-block; margin: 5px 0 5px; color: #fff;
+    font-size: 16px;
+}
+
+.sec2 .tit2 {
+    display: inline-block; width: 5px; height: 75%;
+    border-left: 2px dotted #999;
+}
+/* 스킬컨테이너박스 */
+.sec2 .skillcontainer {
+    width: 50%; height: 60%; display: flex; flex-flow: column;
+    justify-content: center; position: relative;
+}
+.sec2 .skillcontainer h2 { position: absolute; top:5%;
+    right: 0; background: #015c92; font-size: 24px;
+    color: #fff; padding: 10px 20px; display: inline-block;
+    font-family: 'Roboto Mono', monospace; 
+}
+.sec2 .skillcontainer > div {
+    height: 70px; border: 1px solid #015c92; margin: 10px 0;
+    border-radius: 20px 0px 0 20px; 
+    position: relative; display: flex; justify-content: flex-end;
+}
+.sec2 .skillcontainer > div > p {
+    position: absolute; top: 50%; transform: translateY(-50%); 
+    right: 30px;
+}
+.sec2 .skillcontainer > div > .score {
+    background: #000; width: 100%; height: 100%;
+    display: flex; justify-content: flex-start; align-items: center;
+    transition: all 1s;
+}
+.sec2 .skillcontainer > div.html > .score {width: 0%; background: #bce6ff;}
+.sec2 .skillcontainer > div.css > .score {width: 0%; background: #88cdf6;}
+.sec2 .skillcontainer > div.js > .score {width: 0%; background: #53a7d8;}
+.sec2 .skillcontainer > div.jquery > .score {width: 0%; background: #2d82b5;}
+.sec2 .skillcontainer > div.react > .score {width: 0%; background: #015c92;}
+
+.sec2 .skillcontainer.on > div.html > .score {width: 80%;}
+.sec2 .skillcontainer.on > div.css > .score {width: 80%;}
+.sec2 .skillcontainer.on > div.js > .score {width: 60%;}
+.sec2 .skillcontainer.on > div.jquery > .score {width: 70%;}
+.sec2 .skillcontainer.on > div.react > .score {width: 30%;}
+
+.skillcontainer > div > .score > .myscore { font-size:20px; opacity:1; 
+    color:#fff; padding-left:20px; 
+}
+/* -----------section3----------- */
+.sec3 {
+    background: #fff; display: flex; justify-content: center;
+    align-items: center;
+}
+.sec3 .sec3slide {
+    width: 1000px; height: 700px; background: rgb(252, 252, 252);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+
+}
+.sec3 .sec3slide .slidetop {
+    background: #015c92; width:100%; height: 70px;
+    border-radius: 20px 20px 0 0;
+}
+
+
+
+
+/* -----------section4----------- */
+.sec4 {
+    background: #fff;
+    border-radius: 0 0 50px 50px;
+    position: relative;
+    display: flex; align-items: center; justify-content: space-between;
+}
+.sec4 .sec4left {
+    width: 40%; height: 70%;
+}
+.sec4 h3 {
+    font-size: 24px; color: #fff; background: #015c92;
+    padding: 10px 30px 10px 30px; display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    position: relative; top: 20px;
+}
+.sec4 .bottomspace {
+    position: absolute; bottom: 0%; 
+    display: flex; justify-content: center;
+    align-items: center;
+    width: 100%; height: 200px; background: #015c92;
+    border-radius: 0 0 50px 50px;
+}
+.sec4 .bottomspace img {
+    width: 150px; border-radius: 10px;
+}
+.sec4 fieldset {
+    width: 100%; height: 70%; background: rgb(252, 252, 252);
+    padding: 30px;  border-radius: 0 30px 30px 0;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+}
+.sec4 .title {
+    display: inline-block; margin: 20px 0 15px ;
+    font-size: 18px; color: #015c92; font-weight: 900;
+    border-bottom: 2px solid #88cdf6; padding-right: 20px;
+}
+.sec4 input {
+    border: none;
+    border-bottom: 1px solid #015c92;
+    border-right: 1px solid #015c92;
+    height: 40px;
+    width: 100%;
+}
+.sec4 #text {
+    height: 80px;
+}
+.sec4 .sec4btn {
+    border: none; background: #015c92; color: #fff;
+    padding: 10px 15px; font-size: 18px; margin-top: 20px;
+    width: 100%; border-radius: 5px 5px 5px 5px;
+}
+.sec4 .sec4right {
+    width: 55%; height: 50%; background: #bce6ff;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+    margin-bottom: 100px; border-radius: 30px 0 0 30px;
+    display: flex; justify-content: center; align-items: center;
+    flex-flow: column;
+}
+.sec4 .sec4right > p {
+    font-size: 50px; color: #015c92;
+    font-family: 'Abril Fatface', cursive;
+    padding-bottom: 20px;
+}
+.sec4 .sec4right .righttext {
+    width: 200px; height: 200px; border-radius: 50%;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+    font-size: 50px; color: #fff;
+    background: rgba(255,255,255,0.1); display: flex; justify-content: center;
+    align-items: center;
+}
+
