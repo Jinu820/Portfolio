@@ -5,14 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이진우 포트폴리오</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/jquery.mousewheel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>    
+    <!-- <script src="./js/jquery.mousewheel.min.js"></script> -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     
 </head>
 <body>
+    <div class="background"></div>
+
+    <div class="loadingBar">
+        <div class="loadHeight"></div>
+        <i class="fas fa-plane"></i>
+    </div>
+    
     <div class="header">
         <div class="headerwrap">
             <ul class="menu cf">
@@ -25,22 +38,18 @@
     </div>
 
     <div class="wrap">
-        <div class="firstscreen">
-            <p>Port</p>
-            <p>Folio</p>
-            <p>Lee Jin Woo</p>
-        </div>
-    
-        
-    
+
         <section class="sec1">
             <span class="sec1top">
                 <i class="fas fa-plane"></i>
             </span>
             <div class="textbox">
                 <p>lee Jin Woo</p>
-                <p>Port-</p>
-                <p>Folio</p>
+                <p class="typing"></p>
+                
+            </div>
+            <div class="sec1down">
+                <img src="./img/sec1down.svg" alt="">
             </div>
             <div class="barcode">
                 <span class="sec1img"></span>
@@ -48,98 +57,136 @@
         </section>
     
         <section class="sec2">
-            <div class="sec2left">
-                <span class="sec2tit">My Info</span>
-                <h1>
-                    <img src="./img/이진우님 (34증명 무광) 최종.jpg" alt="이진우 사진">
-                </h1>
-                <ul class="info">
-                    <li>
-                        <p>이름</p>
-                        <span>이진우</span>
-                    </li>
-                    <li>
-                        <p>생년월일</p>
-                        <span>1997.08.20</span>
-                    </li>
-                    <li>
-                        <p>거주지</p>
-                        <span>서울특별시 광진구 자양동</span>
-                    </li>
-                    <li>
-                        <p>학교</p>
-                        <span>2016~2020 동서울대학교 시각디자인과</span>
-                    </li>
-                    <li>
-                        <p>자격증</p>
-                        <span>2020 컴퓨터그래픽스운용기능사</span>
-                    </li>
-                </ul>
+            <div class="profile" data-aos="fade-up">
+                <div>
+                    <img src="./img/leejinwoo.jpg" alt="">
+                    <div class="textBox">
+                        <span>이름</span>
+                        <p>이진우</p>
+                        <span>생년월일</span>
+                        <p>1997년 8월 20일</p>
+                        <span>거주지</span>
+                        <p>서울시 광진구 자양동</p>
+                        <span>학력</span>
+                        <p>2016~2020 동서울대학교 시각디자인</p>
+                    </div>
+                </div>
             </div>
-
-            <span class="tit2"></span>
-
-            <div class="skillcontainer">
-                <h2>Skills</h2>
-                <div class="html">
-                    <div class="score">
-                        <div class="myscore"></div>
+            <div class="skill">
+                <div class="top">
+                    <div class='skillSet html5'>
+                        <img src="./img/html.svg" alt="">
+                        <strong></strong>
                     </div>
-                    <p>HTML5</p>
+                    <div class='skillSet css'>
+                        <img src="./img/css.svg" alt="">
+                        <strong></strong>
+                    </div>
+                    <div class='skillSet javascript'>
+                        <img src="./img/javascript.svg" alt="">
+                        <strong></strong>
+                    </div>
                 </div>
-                <div class="css">
-                    <div class="score">
-                        <div class="myscore"></div>
+                <div class="bottom">
+                    <div class='skillSet jQuery'>
+                        <img src="./img/jquery.png" alt="">
+                        <strong></strong>
                     </div>
-                    <p>CSS3</p>
+                    <div class='skillSet React'>
+                        <img src="./img/react.svg" alt="">
+                        <strong></strong>
+                    </div>
+                    <div class='skillSet ai'>
+                        <img src="./img/illust.png" alt="">
+                        <strong></strong>
+                    </div>
                 </div>
-                <div class="js">
-                    <div class="score">
-                        <div class="myscore"></div>
-                    </div>
-                    <p>JAVASCRIPT</p>
-                </div>
-                <div class="jquery">
-                    <div class="score">
-                        <div class="myscore"></div>
-                    </div>
-                    <p>jQUERY</p>
-                </div>
-                <div class="react">
-                    <div class="score">
-                        <div class="myscore"></div>
-                    </div>
-                    <p>REACT</p>
+                <div>
+                    <button type="button" onclick="startgage()">check my skill!</button>
                 </div>
             </div>
         </section>
     
         <section class="sec3">
-            <div class="sec3slide">
-                <div class="slidetop"></div>
+            <div class="sec3slide" data-aos="fade-up" data-aos-duration="1000">
+                <span class="slidetit">
+                    My works
+                </span>
+                <div class="slideInner">
+                    <div class="slide slide1">
+                        <p>전기차 충전소 사이트</p>
+                        <div class="contentBox">
+                            <div class="imgBox img1"></div>
+                            <div class="textBox">
+                                <h3>작업언어</h3>
+                                <p>HTML,CSS,JS</p>
+                                <h3>작업물 설명</h3>
+                                <p>Api데이터를 활용해 비동기방식으로 데이터를 호출해 만들었으며 전기차 충전소 위치정보및 기본적인 전기차에 관한 정보를 나타낸 사이트입니다.</p>
+                                <a href="#" target="_blank">자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide2">
+                        <p>조말론 사이트 리뉴얼</p>
+                        <div class="contentBox">
+                            <div class="imgBox img2"></div>
+                            <div class="textBox">
+                                <h3>작업언어</h3>
+                                <p>HTML,CSS,JS,node.js</p>
+                                <h3>작업물 설명</h3>
+                                <p>조말론 사이트를 리뉴얼하였으며 기존에 기본스크롤로 움직이던 사이트를 섹션을 나누어 스크롤 이벤트에 따라 섹션이 움직이게 제작하였습니다.Node.js로 로그인,회원가입,게시판관리등 데이터베이스도 구현해서 제작하였습니다.</p>
+                                <a href="http://jomalone.cafe24app.com" target="_blank">자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide3">
+                        <p>Welcome Seoul 자체제작 사이트</p>
+                        <div class="contentBox">
+                            <div class="imgBox img3"></div>
+                            <div class="textBox">
+                                <h3>작업언어</h3>
+                                <p>React</p>
+                                <h3>작업물 설명</h3>
+                                <p>서울시 제공 Api데이터를 기반으로 서울시 행사정보,미세먼지 정보를 사이트에 포함했습니다.<br> 서울에 처음 여행오는 사람들을 타켓으로 제작을 하였으며 반응형으로 모바일에서도 쉽게 사용할 수 있게 제작하였습니다.</p>
+                                <a href="#" target="_blank">자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide4">
+                        <p>타이틀4</p>
+                        <div class="contentBox">
+                            <div class="imgBox img4"></div>
+                            <div class="textBox">
+                                <h3>작업언어</h3>
+                                <p>작업언어</p>
+                                <h3>작업언어</h3>
+                                <p>HTML,CSS,JS</p>
+                                <a href="#" target="_blank">자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     
         <section class="sec4">
-            <div class="sec4left">
-                <h3>Contact Me</h3>
-                <fieldset>
-                    <legend>연락처</legend>
-                    <label for="name" class="title">성함</label><br>
-                    <input type="name" id="name"><br>
-                    <label for="phone" class="title">연락처</label><br>
-                    <input type="phone" id="phone"><br>
-                    <label for="text" class="title">남기실 말씀</label><br>
-                    <input type="text" id="text"><br>
-                    <button class="sec4btn">전송</button>
-                </fieldset>
-            </div>
-
-            <div class="sec4right">
-                <p>Thank you</p>
-                <div class="righttext">
-                    <i class="fas fa-plane fa-spin"></i>
+            <div class="contact" data-aos="fade-up" data-aos-duration="1000">
+                <span>Contact Me</span>
+                <div class="content">
+                    <p>저에게 연락을 하고싶으시다면 메일주소로 연락주세요!<br/>최대한 빨리 답장하겠습니다:)</p>
+                    <div class="onlyFlex">
+                        <a class="mail" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=qwee1202@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </a>
+                        <a class="github" href="https://github.com/Jinu820?tab=repositories" target="_blank">
+                            <img src="./img/github.png" alt="깃허브 이미지">
+                        </a>
+                    </div>
                 </div>
+            </div>
+            <div class="kakao">
+                <p>카카오 연락처를 카메라로 스캔해주세요</p>
+                <i class="fa-solid fa-chevron-down"></i>
             </div>
             <span class="bottomspace">
                 <img src="./img/KakaoTalkQR.jpeg" alt="카카오톡 오픈채팅 qr">
@@ -148,5 +195,6 @@
 
     </div>    
     <script src="./js/index.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
