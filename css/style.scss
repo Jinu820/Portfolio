@@ -51,7 +51,7 @@ body {
     position: fixed;
     top: -5%;
     right: 0;
-    background: url(../img/궤도.svg);
+    background: url(../img/orbit.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 700px;
@@ -453,7 +453,7 @@ section {
             /* height: 550px; */
             /* border: 1px solid #000; */
 
-            margin: 70px auto;
+            margin: 60px auto;
             position: relative;
 
             .slide {
@@ -474,10 +474,10 @@ section {
                 }
 
                 >p {
-                    font-size: 24px;
+                    font-size: 30px;
                     color: #fff;
                     background: #53a7d8;
-                    padding: 10px 15px;
+                    padding: 10px 20px;
                     border-radius: 10px 10px 10px 10px;
                 }
 
@@ -505,7 +505,7 @@ section {
                         border-right:1px solid #999 ;
                         border-bottom:1px solid #999 ; */
                         >h3 {
-                            font-size: 18px;
+                            font-size: 22px;
                             padding-bottom: 10px;
                             border-bottom: 1px dashed #000;
                         }
@@ -532,7 +532,7 @@ section {
 
 .sec3 .sec3slide .slick-arrow {
     position: absolute;
-    top: 3%;
+    top: 4%;
     border: none;
     background: none;
     font-size: 24px;
@@ -554,24 +554,35 @@ section {
     border-radius: 0 0 50px 50px;
     padding-top: 100px;
     .contact {
-        width: 100%;
+        width: 80%;
         height: 500px;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        margin: 0 auto;
 
-        span {
+        h2 {
+            font-size: 60px;
+            text-align: center;
+            font-family: 'Abril Fatface', cursive;
+            margin-top: 20px;
+            background: linear-gradient(to right top, #004e92, #000428);
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        > span {
             font-family: 'Roboto Mono', monospace;
             color: #fff;
             font-size: 24px;
             background: #015c92;
             padding: 10px 20px;
-            margin-left: 130px;
+            margin-left: 30px;
+            display: inline-block;
+            transform: translateY(-30px);
         }
 
         > .content {
-            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-            border-radius: 20px;
-            padding: 100px 0 50px;
-            margin: 0 100px;
-
+            margin-top: 40px;
             p {
                 font-size: 18px;
                 text-align: center;
@@ -585,26 +596,56 @@ section {
                 display: flex;
                 padding: 0 150px;
                 margin: 50px 0;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 align-items: center;
                 .mail {
-                    font-size: 50px;
-                    animation: bounce 2s infinite;
-                    transition: all .5s;
-    
-                    &:hover i{
-                        display: none;
+                    font-size: 65px;
+                    // animation: bounce 2s infinite;
+                    color: #53a7d8;
+                    position: relative;
+                    &:hover i {opacity: 0;}
+                    &:hover span {opacity: 1;}
+                    i {
+                        transition: all .5s;
+                        opacity: 1;
+                        
                     }
-    
-                    &:hover::before {
-                        content: 'qwee1202@gmail.com';
-                        font-size: 30px;
+                    > span {
+                        font-size: 24px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        opacity: 0;
                     }
                 }
-                .github {
-                    img {
-                        width: 50px;
+
+                .phoneNum {
+                    font-size: 65px;
+                    color: #53a7d8;
+                    position: relative;
+                    &:hover i {opacity: 0;}
+                    &:hover span {opacity: 1;}
+                    i {
+                        transition: all .5s;
+                        opacity: 1;
+                        
                     }
+                    span {
+                        font-size: 24px;
+                        width: 300px;
+                        text-align: center;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        opacity: 0;
+                    }
+                }
+                
+                .github {
+                    font-size: 65px;
+                    color: #53a7d8;
                 }
             }
             
@@ -632,6 +673,7 @@ section {
         text-align: center;
         height: 50px;
         position: relative;
+        margin-top: 20px;
         i {
             position: absolute;
             left: 50%;
@@ -655,7 +697,7 @@ section {
     }
     
     .bottomspace {
-        margin-top: 50px;
+        margin-top: 20px;
         display: flex;
         justify-content: center;
         align-items: center;

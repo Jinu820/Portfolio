@@ -56,7 +56,7 @@ body {
   position: fixed;
   top: -5%;
   right: 0;
-  background: url(../img/궤도.svg);
+  background: url(../img/orbit.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 700px;
@@ -541,7 +541,7 @@ section {
   width: 90%;
   /* height: 550px; */
   /* border: 1px solid #000; */
-  margin: 70px auto;
+  margin: 60px auto;
   position: relative;
 }
 
@@ -562,10 +562,10 @@ section {
 }
 
 .sec3 .sec3slide .slideInner .slide > p {
-  font-size: 24px;
+  font-size: 30px;
   color: #fff;
   background: #53a7d8;
-  padding: 10px 15px;
+  padding: 10px 20px;
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -600,7 +600,7 @@ section {
 }
 
 .sec3 .sec3slide .slideInner .slide .contentBox .textBox > h3 {
-  font-size: 18px;
+  font-size: 22px;
   padding-bottom: 10px;
   border-bottom: 1px dashed #000;
 }
@@ -619,7 +619,7 @@ section {
 
 .sec3 .sec3slide .slick-arrow {
   position: absolute;
-  top: 3%;
+  top: 4%;
   border: none;
   background: none;
   font-size: 24px;
@@ -642,25 +642,39 @@ section {
 }
 
 .sec4 .contact {
-  width: 100%;
+  width: 80%;
   height: 500px;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin: 0 auto;
 }
 
-.sec4 .contact span {
+.sec4 .contact h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  margin-top: 20px;
+  background: -webkit-gradient(linear, left bottom, right top, from(#004e92), to(#000428));
+  background: linear-gradient(to right top, #004e92, #000428);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.sec4 .contact > span {
   font-family: 'Roboto Mono', monospace;
   color: #fff;
   font-size: 24px;
   background: #015c92;
   padding: 10px 20px;
-  margin-left: 130px;
+  margin-left: 30px;
+  display: inline-block;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
 .sec4 .contact > .content {
-  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  padding: 100px 0 50px;
-  margin: 0 100px;
+  margin-top: 40px;
 }
 
 .sec4 .contact > .content p {
@@ -680,33 +694,79 @@ section {
   display: flex;
   padding: 0 150px;
   margin: 50px 0;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .sec4 .contact > .content .onlyFlex .mail {
-  font-size: 50px;
-  -webkit-animation: bounce 2s infinite;
-          animation: bounce 2s infinite;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  font-size: 65px;
+  color: #53a7d8;
+  position: relative;
 }
 
 .sec4 .contact > .content .onlyFlex .mail:hover i {
-  display: none;
+  opacity: 0;
 }
 
-.sec4 .contact > .content .onlyFlex .mail:hover::before {
-  content: 'qwee1202@gmail.com';
-  font-size: 30px;
+.sec4 .contact > .content .onlyFlex .mail:hover span {
+  opacity: 1;
 }
 
-.sec4 .contact > .content .onlyFlex .github img {
-  width: 50px;
+.sec4 .contact > .content .onlyFlex .mail i {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  opacity: 1;
+}
+
+.sec4 .contact > .content .onlyFlex .mail > span {
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.sec4 .contact > .content .onlyFlex .phoneNum {
+  font-size: 65px;
+  color: #53a7d8;
+  position: relative;
+}
+
+.sec4 .contact > .content .onlyFlex .phoneNum:hover i {
+  opacity: 0;
+}
+
+.sec4 .contact > .content .onlyFlex .phoneNum:hover span {
+  opacity: 1;
+}
+
+.sec4 .contact > .content .onlyFlex .phoneNum i {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  opacity: 1;
+}
+
+.sec4 .contact > .content .onlyFlex .phoneNum span {
+  font-size: 24px;
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.sec4 .contact > .content .onlyFlex .github {
+  font-size: 65px;
+  color: #53a7d8;
 }
 
 @-webkit-keyframes bounce {
@@ -743,6 +803,7 @@ section {
   text-align: center;
   height: 50px;
   position: relative;
+  margin-top: 20px;
 }
 
 .sec4 .kakao i {
@@ -773,7 +834,7 @@ section {
 }
 
 .sec4 .bottomspace {
-  margin-top: 50px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
