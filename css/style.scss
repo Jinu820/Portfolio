@@ -22,30 +22,30 @@ body {
 }
 
 
-    .loadingBar {
-        position: fixed;
+.loadingBar {
+    position: fixed;
+    width: 5px;
+    height: 100%;
+    left: 5%;
+    top: 0%;
+    background: rgba(255,255,255,.3);
+    padding-bottom: 100px;
+    .loadHeight{
+        position: absolute;
+        top: 0; left: 0;
         width: 5px;
-        height: 100%;
-        left: 8%;
-        top: 0%;
-        background: rgba(255,255,255,.3);
-        padding-bottom: 100px;
-        .loadHeight{
-            position: absolute;
-            top: 0; left: 0;
-            width: 5px;
-            background: linear-gradient(to bottom, #56ccf2, #2f80ed);
-            height: 0%;
-        }
-        i {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%) translateY(-40px) rotate(90deg);
-            font-size: 40px;
-            color: #015c92;
-        }
+        background: linear-gradient(to bottom, #56ccf2, #2f80ed);
+        height: 0%;
     }
+    i {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(-42px) rotate(90deg);
+        font-size: 40px;
+        color: #015c92;
+    }
+}
 
 .background {
     position: fixed;
@@ -212,9 +212,10 @@ section {
             }
 
             &:nth-child(2) {
-                line-height: 170px;
+                padding-top: 30px;
+                line-height: 20vh;
                 letter-spacing: -10px;
-                font-size: 170px;
+                font-size: 20vh;
             }
 
         }
@@ -673,7 +674,7 @@ section {
         text-align: center;
         height: 50px;
         position: relative;
-        margin-top: 20px;
+        margin-top: 50px;
         i {
             position: absolute;
             left: 50%;
