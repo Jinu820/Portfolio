@@ -11,6 +11,8 @@ let text = document.querySelector('.typing')
 let typewriter = new Typewriter(text, {
     loop:true
 })
+
+// section1 타이핑효과 코드
 typewriter
     .typeString('Welcome')
     .pauseFor(0)
@@ -37,6 +39,53 @@ typewriter
 //     }, time)
 // }
 
+// 다크모드 토글코드
+$('.darkToggle').on('click',function(e){
+    e.preventDefault()
+    $(this).find('.toggleIcon').toggleClass('on')
+    if ( $('.toggleIcon').hasClass('on') ) {
+        $('.toggleIcon').animate({
+            left:'23px'
+        },200);
+        $('.toggleIcon').css({
+            background:'#999'
+        });
+        $('.darkToggle').css({
+            border:'2px solid #999'
+        })
+        $('html').css({
+            background: 'linear-gradient(180deg, #243B55, #141E30)'
+        });
+        $('.loadHeight').css({
+            background: 'linear-gradient(to bottom, #ccc, #243B55)'
+        });
+        $('.loadingBar > i').css({
+            color:'#395fab'
+        })
+    } else {
+        $('.toggleIcon').animate({
+            left:'2px'
+        },200);
+        $('.toggleIcon').css({
+            background:'#fff'
+        });
+        $('.darkToggle').css({
+            border:'2px solid #fff'
+        })
+        $('html').css({
+            background: 'linear-gradient(180deg, #bce6ff, #2d82b5)'
+        });
+        $('.loadHeight').css({
+            background: 'linear-gradient(to bottom, #56ccf2, #2f80ed)'
+        });
+        $('.loadingBar > i').css({
+            color:'#015c92'
+        });
+
+    }
+})
+
+// Section1 밑으로화살표 코드
 $('.sec1 .sec1down > img').on('click',function(e){
     e.preventDefault()
     var sec2top = $('.sec2').offset().top
@@ -46,6 +95,7 @@ $('.sec1 .sec1down > img').on('click',function(e){
     // $(window).scrollTop(sec2top).animate(500)
 })
 
+// 메뉴바 클릭시 페이지 이동 코드
 var flag = false
 $('.header .menu li a').on('click',function(e){
     e.preventDefault()

@@ -200,42 +200,26 @@ section {
   cursor: pointer;
 }
 
-@-webkit-keyframes imove {
-  0% {
-    left: 50px;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    opacity: 0.5;
-  }
-  100% {
-    left: calc(100% - 100px);
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    opacity: 1;
-  }
-  0% {
-    left: 50px;
-    rotate: 180deg;
-  }
+.sec1 .sec1top .darkToggle {
+  position: absolute;
+  right: 50px;
+  width: 50px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 20px;
 }
 
-@keyframes imove {
-  0% {
-    left: 50px;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    opacity: 0.5;
-  }
-  100% {
-    left: calc(100% - 100px);
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    opacity: 1;
-  }
-  0% {
-    left: 50px;
-    rotate: 180deg;
-  }
+.sec1 .sec1top .darkToggle .toggleIcon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .sec1 .textbox {
@@ -819,6 +803,19 @@ section {
 .sec4 .kakao i:nth-child(1) {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
+}
+
+@-webkit-keyframes imove {
+  0% {
+    top: 30px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    top: 50px;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
 }
 
 @keyframes imove {

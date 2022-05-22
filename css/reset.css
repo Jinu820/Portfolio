@@ -14,7 +14,7 @@ figure, header, section, footer, nav, article, aside, main {
 fieldset { border:none }
 legend { display:none }
 input {  background:none }
-button {  background:none; cursor:pointer }
+button {  background:none; border: none; cursor:pointer }
 label { display:inline-block }
 h1, h2, h3, h4, h5, h6, th, strong {
     font-weight:normal
