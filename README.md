@@ -5,3 +5,6 @@ https://jinu820.github.io/Portfolio/
 <hr/>
 ### 작업기간 : 2022/02/10 ~ 2022/05/02
 <hr/>
+### 사용 에디터 : VSC (Visual Studio Code)
+<hr/>
+### 사용 언어 : HTML5 / SCSS / jQuery / 
