@@ -153,34 +153,34 @@ $(window).on('scroll',function(){
 
 $('.sec2 .skill .html5').circleProgress({
     value: 0 ,
-    size:150,
+    size:130,
 })
 $('.sec2 .skill .css').circleProgress({
     value: 0 ,
-    size:150,
+    size:130,
 })
 $('.sec2 .skill .javascript').circleProgress({
     value: 0 ,
-    size:150,
+    size:130,
 })
 $('.sec2 .skill .jQuery').circleProgress({
     value: 0 ,
-    size:150,
+    size:130,
 })
 $('.sec2 .skill .React').circleProgress({
     value: 0 ,
-    size:150,
+    size:130,
 })
 $('.sec2 .skill .ai').circleProgress({
     value: 0 ,
-    size:150,
+    size:130,
 })
 
 function startgage(){
     $('.sec2 .skill .html5').circleProgress({
         value: 0.9,
         startAngle: 300,
-        size:150,
+        size:130,
         fill:{
             gradient:["#f12711","#f5af19"],
             gradientAngle: Math.PI / 2
@@ -198,7 +198,7 @@ function startgage(){
     $('.sec2 .skill .css').circleProgress({
         value: 0.8,
         startAngle: 300,
-        size:150,
+        size:130,
         fill:{
             gradient:["#56ccf2","#2f80ed"],
             gradientAngle: Math.PI / 2
@@ -215,7 +215,7 @@ function startgage(){
     $('.sec2 .skill .javascript').circleProgress({
         value: 0.6,
         startAngle: 300,
-        size:150,
+        size:130,
         fill:{
             gradient:["#ffca28","#fffc00"],
             gradientAngle: Math.PI / 2
@@ -232,7 +232,7 @@ function startgage(){
     $('.sec2 .skill .jQuery').circleProgress({
         value: 0.7,
         startAngle: 300,
-        size:150,
+        size:130,
         fill:{
             gradient:["#1e3c72","#2a5298"],
             gradientAngle: Math.PI / 2
@@ -250,7 +250,7 @@ function startgage(){
     $('.sec2 .skill .React').circleProgress({
         value: 0.7,
         startAngle: 300,
-        size:150,
+        size:130,
         fill:{
             gradient:["#2193b0","#6dd5ed"],
             gradientAngle: Math.PI / 2
@@ -268,7 +268,7 @@ function startgage(){
     $('.sec2 .skill .ai').circleProgress({
         value: 0.9 ,
         startAngle: 300,
-        size:150,
+        size:130,
         fill:{
             gradient:["#f7971e","#ffd200"],
             gradientAngle: Math.PI / 2

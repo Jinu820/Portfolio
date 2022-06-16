@@ -258,7 +258,7 @@ section {
         }
     }
 
-    .sec1down>img {
+    .sec1down > img {
         position: absolute;
         top: 20%;
         right: 3%;
@@ -313,8 +313,8 @@ section {
         position: relative;
         z-index: 2;
 
-        >div {
-            width: 70%;
+        > div {
+            width: 65%;
             // background: #53a7d8;
             background: linear-gradient(to right, #56ccf2, #2f80ed);
             padding: 50px;
@@ -334,7 +334,7 @@ section {
 
                 span {
                     color: #FFF;
-                    font-size: 22px;
+                    font-size: 20px;
                     font-weight: 700;
                 }
 
@@ -370,13 +370,13 @@ section {
         }
 
         .skillSet {
-            width: 150px;
+            width: 120px;
             position: relative;
 
             img {
                 width: 50px;
                 position: absolute;
-                top: 30%;
+                top: 25%;
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -492,8 +492,9 @@ section {
                     background-image: url(../img/stussy.gif);
                 }
 
-                >p {
-                    font-size: 30px;
+                > p {
+                    font-size: 24px;
+                    font-weight: 600;
                     color: #fff;
                     background: #53a7d8;
                     padding: 10px 20px;
@@ -524,7 +525,8 @@ section {
                         border-right:1px solid #999 ;
                         border-bottom:1px solid #999 ; */
                         >h3 {
-                            font-size: 22px;
+                            font-size: 18px;
+                            font-weight: 500;
                             padding-bottom: 10px;
                             border-bottom: 1px dashed #000;
                         }
@@ -532,6 +534,7 @@ section {
                         >p {
                             padding-top: 10px;
                             padding-bottom: 30px;
+                            line-height: 1.7em;
                         }
 
                         >a {
@@ -698,6 +701,7 @@ section {
             left: 50%;
             transform: translateX(-50%);
             animation: imove 2s infinite linear ;
+            transform-origin: center;
             &:nth-child(1) {
                 animation-delay: 0s;
             }
@@ -710,7 +714,6 @@ section {
             100% {
             top: 50px;
             transform: scale(2);
-        
             }
         }
     }

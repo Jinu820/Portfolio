@@ -339,7 +339,7 @@ section {
 }
 
 .sec2 .profile > div {
-  width: 70%;
+  width: 65%;
   background: -webkit-gradient(linear, left top, right top, from(#56ccf2), to(#2f80ed));
   background: linear-gradient(to right, #56ccf2, #2f80ed);
   padding: 50px;
@@ -368,7 +368,7 @@ section {
 
 .sec2 .profile > div .textBox span {
   color: #FFF;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -412,14 +412,14 @@ section {
 }
 
 .sec2 .skill .skillSet {
-  width: 150px;
+  width: 120px;
   position: relative;
 }
 
 .sec2 .skill .skillSet img {
   width: 50px;
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -547,7 +547,8 @@ section {
 }
 
 .sec3 .sec3slide .slideInner .slide > p {
-  font-size: 30px;
+  font-size: 24px;
+  font-weight: 600;
   color: #fff;
   background: #53a7d8;
   padding: 10px 20px;
@@ -585,7 +586,8 @@ section {
 }
 
 .sec3 .sec3slide .slideInner .slide .contentBox .textBox > h3 {
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: 500;
   padding-bottom: 10px;
   border-bottom: 1px dashed #000;
 }
@@ -593,6 +595,7 @@ section {
 .sec3 .sec3slide .slideInner .slide .contentBox .textBox > p {
   padding-top: 10px;
   padding-bottom: 30px;
+  line-height: 1.7em;
 }
 
 .sec3 .sec3slide .slideInner .slide .contentBox .textBox > a {
@@ -798,6 +801,8 @@ section {
           transform: translateX(-50%);
   -webkit-animation: imove 2s infinite linear;
           animation: imove 2s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .sec4 .kakao i:nth-child(1) {
