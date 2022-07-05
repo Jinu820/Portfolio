@@ -607,7 +607,7 @@ section {
 
 .sec3 .sec3slide .slick-arrow {
   position: absolute;
-  top: 4%;
+  top: 15px;
   border: none;
   background: none;
   font-size: 24px;
@@ -755,6 +755,10 @@ section {
 .sec4 .contact > .content .onlyFlex .github {
   font-size: 65px;
   color: #53a7d8;
+}
+
+.sec4 .contact > .content .onlyFlex .velog {
+  width: 65px;
 }
 
 @-webkit-keyframes bounce {
